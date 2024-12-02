@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globecoin White Paper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #6a1b9a, #ffcc00);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h3 {
+            color: #ffd54f;
+            text-align: left;
+            font-size: 1.4em;
+        }
+
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            color: #e3e3e3;
+        }
+
+        .interactive-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: #6a1b9a;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffd54f;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        a {
+            color: #ffd54f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Globecoin White Paper</h1>
+        
+        <h2>Abstract</h2>
+        <p>
+            Globecoin is a next-generation cryptocurrency that offers fast, secure, and transparent financial solutions. 
+            Built on the Solana blockchain, Globecoin is scalable, eco-friendly, and geared toward real-world applications.
+        </p>
+
+        <h2>Introduction</h2>
+        <p>
+            Traditional financial systems face challenges in meeting the demands of an interconnected and fast-paced global economy. 
+            Globecoin addresses these challenges by providing a decentralized platform for seamless financial transactions, 
+            fostering inclusivity, transparency, and innovation.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>High-Speed Transactions</strong>: Utilizing Solana blockchain for unmatched transaction speeds.</li>
+            <li><strong>Eco-Friendly Operations</strong>: Minimal environmental footprint compared to traditional proof-of-work systems.</li>
+            <li><strong>Transparency and Security</strong>: Fully auditable and secured by advanced blockchain protocols.</li>
+            <li><strong>Low-Cost Transactions</strong>: Designed to reduce costs for both consumers and businesses.</li>
+        </ul>
+
+        <h2>Technical Overview</h2>
+        <p>
+            Globecoin is powered by the Solana blockchain, which combines Proof of History (PoH) and Proof of Stake (PoS) to deliver 
+            high throughput and energy efficiency. The smart contract compatibility allows for integration with Decentralized Applications (DApps) and advanced features like staking and governance.
+        </p>
+
+        <h2>Use Cases</h2>
+        <ul>
+            <li>Decentralized finance (DeFi) applications</li>
+            <li>Global remittances and micropayments</li>
+            <li>Tokenized asset trading</li>
+            <li>Reward systems and loyalty programs</li>
+        </ul>
+
+        <h2>Future Development</h2>
+        <h3>DApp Development</h3>
+        <p>
+            Globecoin will launch its dedicated DApp in <b>2025, Q3</b>. The development will focus on user-friendly design, security, and scalability. 
+            As the sole creator of Globecoin, the DApp's initial phase will be directed by one individual to ensure consistency and alignment with the coin's vision.
+        </p>
+        <p>
+            Key functionalities planned for the DApp include:
+        </p>
+        <ul>
+            <li>Integration with Solana wallets (e.g., Phantom Wallet).</li>
+            <li>Token management: Send, receive, and store Globecoin securely.</li>
+            <li>Staking and rewards mechanisms for holders.</li>
+            <li>Real-time transaction tracking and account summaries.</li>
+            <li>Support for Decentralized Finance (DeFi) applications.</li>
+        </ul>
+
+        <h2>Roadmap</h2>
+        <ul>
+            <li><strong>Q1 2024</strong>: Initial launch and token distribution.</li>
+            <li><strong>Q2 2024</strong>: Establish partnerships and list on exchanges.</li>
+            <li><strong>Q3 2024</strong>: Pilot staking and rewards program.</li>
+            <li><strong>Q3 2025</strong>: Launch of Globecoin DApp.</li>
+            <li><strong>Q4 2025</strong>: Integration with advanced DeFi platforms and community-driven governance features.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            Globecoin is a cryptocurrency designed to empower global users with secure and efficient financial tools. 
+            With the upcoming DApp launch in 2025, the project aims to further solidify its position as a leader in the blockchain ecosystem. 
+            Join us on this transformative journey to revolutionize global finance.
+        </p>
+
+        <div class="footer">
+            <p>For more information, visit our official website: <a href="#">https://globecoin.io</a></p>
+        </div>
+        
+        <!-- Interactive Button Section -->
+        <div class="interactive-section">
+            <h3>Interact with Globecoin</h3>
+            <button id="toggleMessageBtn">Show Welcome Message</button>
+            <p id="message" style="display: none;">Welcome to Globecoin! The future of finance is here.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleMessageBtn').addEventListener('click', function() {
+            var message = document.getElementById('message');
+            if (message.style.display === 'none') {
+                message.style.display = 'block';
+            } else {
+                message.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
